@@ -1,0 +1,92 @@
+Phishing Email Analysis Report
+
+Objective:
+Identify phishing characteristics in a suspicious email sample.
+
+---
+
+1. Sample Phishing Email
+
+From: PayPal Support
+To: user@example.com
+Bcc: sanchitavidhate849@gmail.com
+Date: July 28, 2025, 14:23
+Subject: Urgent: Your Account Has Been Limited!
+
+Body Snippet:
+"Dear Customer,
+
+We have noticed suspicious activity on your PayPal account. For your protection, we have temporarily limited access.
+
+To restore full access, please verify your account immediately:
+
+[Verify Now](http://paypal-alert-support.com/login)
+
+If you do not complete the verification in 24 hours, your account will be permanently suspended.
+
+Thank you for choosing PayPal.
+- PayPal Security Team"
+
+---
+
+2. Spoofed Sender Address
+
+- Sender: “PayPal Support”
+- Email domain `paypal-alert.com` is not the official PayPal domain (`paypal.com`).
+- Indicates a spoofing attempt.
+
+---
+
+3. Email Header Analysis
+
+- No DKIM/SPF records found.
+- Sender and reply-to domains are unverified.
+- No signs of mass mailing (Bcc not used).
+
+---
+
+4. Suspicious Links or Attachments
+
+- URL: http://paypal-alert-support.com/login
+- Disguised link mimicking PayPal’s login.
+- No attachments detected.
+
+---
+
+5. Threatening Language
+
+- Uses fear tactics: “limited access”, “verify immediately”, “permanent suspension”.
+- Common strategy to provoke rash user actions.
+
+---
+
+6. Mismatched URLs
+
+- Hyperlink text differs from actual destination.
+- This red flag is typical of phishing attacks.
+
+---
+
+7. Generic Language and Lack of Personalization
+
+- Greeting: “Dear Customer” (not personalized).
+- Genuine PayPal emails typically address users by name.
+
+---
+
+8. Summary of Phishing Traits
+
+- Suspicious, spoof-like sender domain.
+- Unpersonalized greeting.
+- Urgency and threats.
+- Fake login URL.
+- Missing digital signatures.
+- Attempt to harvest credentials.
+
+---
+
+Conclusion:
+This email is a phishing attempt. It includes multiple red flags such as a spoofed domain, urgent tone, fake URL, and generic greeting. Do NOT click the link or provide any personal details. Report and delete the email immediately.
+
+Reported by: Sanchita Santosh Vidhate
+Date: 05/08/2025
